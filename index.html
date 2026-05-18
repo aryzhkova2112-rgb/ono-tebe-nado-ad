@@ -43,19 +43,107 @@
     <main class="main">
         <!-- Секция Обложка -->
         <section class="cover">
+            <div class="cover__background"></div>
+            <h1 class="cover__title">
+                <span class="cover__title-accent">Оно</span>
+                <span class="cover__title-text">тебе</span>
+                <span class="cover__title-accent">надо</span>
+            </h1>
+            <div class="cover__description">
+                <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+                <button class="cover__bid-button" type="button">Сделать ставку</button>
+            </div>
         </section>
 
         <!-- Секция Лоты -->
-        <section class="lots">
+        <section class="lots" id="lots">
+            <h2 class="lots__heading">Лоты</h2>
+            <ul class="lots__card-list">
+                <!-- Карточка 1 -->
+                <li class="lots__card-list-item">
+                    <a class="lots__card-link" href="#0">
+                        <article class="card card_type_film">
+                            <h3 class="card__title">Фильм «Назад в будущее» на оригинальной кассете VHS</h3>
+                            <p class="card__text">Один из главных фильмов нашей юности, который заставил нас поверить, что путешествия во времени возможны. Кассета в идеальном состоянии, коробка немного потёрта.</p>
+                        </article>
+                    </a>
+                </li>
+                <!-- Карточка 2 -->
+                <li class="lots__card-list-item">
+                    <a class="lots__card-link" href="#0">
+                        <article class="card card_type_book">
+                            <h3 class="card__title">Книга «Философия Энди Уорхола» с автографом автора</h3>
+                            <p class="card__text">Редкое издание книги знаменитого художника. Автограф оставлен в 1985 году на презентации в Нью-Йорке. Книга хранилась в сухом тёмном месте.</p>
+                        </article>
+                    </a>
+                </li>
+                <!-- Карточка 3 -->
+                <li class="lots__card-list-item">
+                    <a class="lots__card-link" href="#0">
+                        <article class="card card_type_picture">
+                            <h3 class="card__title">Оригинальный постер к фильму «Трон» 1982 года</h3>
+                            <p class="card__text">Редкий постер первого фантастического фильма, в котором использовалась компьютерная графика. Постер в рамке, есть небольшие заломы по краям.</p>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+            <!-- Ссылка под карточками -->
+            <a class="lots__look-more-link" href="#0">Посмотреть еще лоты</a>
         </section>
-
+        
         <!-- Секция О проекте -->
-        <section class="about">
+        <section class="about" id="about">
+            <div class="about__column">
+                <div class="about__logo">
+                    <img class="about__logo-image" src="./images/logo-white.svg" alt="Логотип Оно тебе надо белый">
+                </div>
+            </div>
+            <div class="about__column">
+                <h2 class="about__title">Об аукционе</h2>
+                <div class="about__text">
+                    <p class="about__text-paragraph">Наш аукцион — это место, где старые вещи обретают новую жизнь. Мы собираем предметы, которые кажутся бесполезными, но имеют огромную культурную или историческую ценность.</p>
+                    <p class="about__text-paragraph">Каждый лот уникален, а история его появления на аукционе заслуживает отдельной книги. Делайте ставки и выигрывайте артефакты ушедших эпох!</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Подвал сайта -->
     <footer class="footer">
+        <address class="footer__address">
+            <p class="footer__address-text">+7 999 000 00 00</p>
+            <p class="footer__address-text">ул. Покровка, д. 3</p>
+        </address>
+        <nav class="footer__menu">
+            <ul class="footer__links-list">
+                <li class="footer__links-list-item">
+                    <a class="footer__link footer__link_active" href="#0">главная</a>
+                </li>
+                <li class="footer__links-list-item">
+                    <a class="footer__link" href="#lots">посмотреть лоты</a>
+                </li>
+                <li class="footer__links-list-item">
+                    <a class="footer__link" href="#about">об аукционе</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="footer__social-list">
+            <li class="footer__social-list-item">
+                <a class="footer__social-link" href="#0">
+                    <img class="footer__social-icon" src="./images/yt.svg" alt="YouTube">
+                </a>
+            </li>
+            <li class="footer__social-list-item">
+                <a class="footer__social-link" href="#0">
+                    <img class="footer__social-icon" src="./images/vk.svg" alt="ВКонтакте">
+                </a>
+            </li>
+            <li class="footer__social-list-item">
+                <a class="footer__social-link" href="#0">
+                    <img class="footer__social-icon" src="./images/pinterest.svg" alt="Pinterest">
+                </a>
+            </li>
+        </ul>
     </footer>
   </body>
 </html>
