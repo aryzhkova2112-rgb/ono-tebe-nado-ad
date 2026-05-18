@@ -119,3 +119,86 @@
   border: 1px solid #ffffff;
   cursor: pointer;
 }
+
+/* Стили для секции Лоты */
+.lots {
+  padding: 179px 50px 0;
+}
+
+.lots__heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.lots__card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+}
+
+.lots__card-list-item {
+  min-height: 450px;
+}
+
+.lots__card-link {
+  display: block;
+  height: 100%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Общие стили карточки */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 50px 40px 40px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Фоны для разных типов карточек */
+.card_type_film {
+  background-image: url(../images/card-lot-picture.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-books.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-film.jpg);
+}
+
+.card__title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.lots__look-more-link {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+}
