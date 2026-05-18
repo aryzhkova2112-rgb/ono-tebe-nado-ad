@@ -55,3 +55,67 @@
 .header__address-text {
   margin: 0;
 }
+
+/* Стили для секции Обложка */
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+  min-height: 550px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+.cover__title-text {
+  align-self: center;
+}
+
+.cover__title-accent {
+  align-self: flex-start;
+}
+
+.cover__title-accent:last-child {
+  align-self: flex-end;
+}
+
+.cover__description {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 78px;
+  color: #ffffff;
+}
+
+.cover__description-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  max-width: 300px;
+}
+
+.cover__bid-button {
+  padding: 12px 33px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
