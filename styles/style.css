@@ -202,3 +202,117 @@
   text-decoration: none;
   border-bottom: 1px solid #000000;
 }
+
+/* Стили для секции О проекте */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 25px;
+  padding: 179px 50px 0;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__logo-image {
+  width: 148px;
+}
+
+.about__title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin: 0 0 27px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about__text-paragraph {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+/* Стили для подвала сайта */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 179px 50px 92px;
+}
+
+.footer__address {
+  justify-self: start;
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer__address-text {
+  margin: 0;
+}
+
+.footer__menu {
+  justify-self: center;
+}
+
+.footer__links-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer__link_active {
+  border-bottom: 1px solid #000000;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-self: end;
+}
+
+.footer__social-link {
+  display: block;
+}
+
+.footer__social-icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
